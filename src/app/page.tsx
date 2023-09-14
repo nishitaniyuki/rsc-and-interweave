@@ -12,8 +12,7 @@ const html = `
 
 function transform(node: HTMLElement, children: Node[]): React.ReactNode {
   if (node.tagName === 'a') {
-    <a></a>
-      return <LogLink href={node.getAttribute('href') ?? ''}>{children}</LogLink>;
+    return <LogLink href={node.getAttribute('href') ?? ''}>{children}</LogLink>;
   }
 }
 
